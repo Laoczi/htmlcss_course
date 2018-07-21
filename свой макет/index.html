@@ -1,36 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/flavicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 </head>
 <body>
 <header>
-		<h1><a href="#">MARBLE</a></h1>
-	
-	<nav>
-     	<ul>
-	    	<li><a href='#'>HOME</a></li>
-		    <li><a href='#'>ABOUT</a></li>
-			<li><a href='#'>JOURNAL</a></li>
-			<li><a href='#'>SERVICE</a></li>
-			<li><a href='#'>FEATURES</a></li>
-			<li><a href='#'>CONTACT</a></li>
-		</ul>
-	</nav>
-		
+    <div class="wrapper">
+        <h1 class="logo"><a href="#">MARBLE</a></h1>
+
+        <nav>
+            <ul class="dropdown-menu">
+                <li><a href='#'>HOME</a></li>
+                <li class="dropdown-title"><a href='#'>ABOUT</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Our history</a></li>
+                        <li class="submenu-item"><a href="#">Our purpose</a></li>
+                        <li class="submenu-item"><a href="#">Our projects</a></li>
+                    </ul>
+                </li>
+                <li><a href='#'>JOURNAL</a></li>
+                <li class="dropdown-title"><a href='#'>SERVICE</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Modern Logo</a></li>
+                        <li class="submenu-item"><a href="#">Brand Design</a></li>
+                        <li class="submenu-item"><a href="#">Site Design</a></li>
+                    </ul>
+                </li>
+                <li><a href='#'>FEATURES</a></li>
+                <li class="dropdown-title"><a href='#'>CONTACT</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Email</a></li>
+                        <li class="submenu-item"><a href="#">Phone</a></li>
+                        <li class="submenu-item"><a href="#">Fax</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <div class="slider">
-	<div class="slider_wrapper">
-    	<h1>We are a digital &#38 branding agency based in London.</h1>
-		<h2>We love to turn great ideas into beautiful products.</h2>
-		<a href='#'><p>see Portfolio</p></a>
+    <div class="slider_wrapper">
+        <h1>We are a digital &#38; branding agency based in London.</h1>
+        <h2>We love to turn great ideas into beautiful products.</h2>
+        <a href='#'><p class="portfolio">SEE PORTFOLIO</p></a>
     </div>
-	
-
-
 </div>
+<main>
+    <section class="services">
+        <div class="services-wrapper">
+            <div class="service">
+                <div class="service-img"><a href="#"><img src="images/Services-1.png" alt=""></a></div>
+                <h3>Pellentesque</h3>
+                <p>Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit
+                    dapibus.
+                </p>
+            </div>
+            <div class="service">
+                <div class="service-img"><a href="#"><img src="images/Services-2.png" alt=""></a></div>
+                <h3>Concectetur</h3>
+                <p>Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur
+                    dui.</p>
+            </div>
+            <div class="service">
+                <div class="service-img"><a href="#"><img src="images/Services-3.png" alt=""></a></div>
+                <h3>Tristiquet</h3>
+                <p>Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    risus.
+                </p>
+            </div>
+            <div class="service">
+                <div class="service-img"><a href="#"><img src="images/Services-4.png" alt=""></a></div>
+                <h3>Fermentun</h3>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus
+                    mollis.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="middle-wrapper">
+        <hr>
+        <h3>Our Latest Works</h3>
+    </div>
+    <div class="works-wrapper">
+
+        <div class="works">
+            <div class="work">
+                <div><img src="images/content-1.png" alt=""></div>
+                <h3>Nobis Business Card</h3>
+                <div><p class="description">Business Card, Graphic</p></div>
+                <div><p>Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div><img src="images/content-2.png" alt=""></div>
+                <h3>New Fun Project</h3>
+                <div><p class="description">Web Design, Application</p></div>
+                <div><p>Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula porta
+                    felis.</p></div>
+            </div>
+
+            <div class="work">
+                <div><img src="images/content-3.png" alt=""></div>
+                <h3>Passionaries Branding Cover</h3>
+                <div><p class="description">Branding, Graphic Design</p></div>
+                <div><p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+</main>
 </body>
 </html>
