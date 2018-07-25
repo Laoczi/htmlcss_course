@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ArialRoundedMTBold;
+    src: url('fonts/ArialRoundedMTBold.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +13,7 @@ body {
     height: 2306px;
 }
 
+/*Style for header*/
 header {
     display: flex;
     justify-content: space-around;
@@ -25,18 +31,6 @@ header a {
 
 nav {
     display: flex;
-}
-
-footer {
-    width:100%;
-    height: 459px;
-    background:url("images/footer_bg.jpg");
-}
-
-hr {
-    margin: 50px 70px 50px 110px;
-    background-color: rgba(0, 0, 0, 0.11);
-    height: 2px;
 }
 
 header ul {
@@ -57,17 +51,17 @@ header li {
     text-transform: uppercase;
 }
 
-.wrapper {
+.header-wrapper {
     display: flex;
     width: 75%;
     justify-content: space-between;
 }
 
-.logo {
+.header-logo {
     align-self: center;
 }
 
-.logo a {
+.header-logo a {
     color: #4e4e4e;
     font-family: "Roboto Condensed", sans-serif;;
     font-size: 40px;
@@ -76,6 +70,7 @@ header li {
     letter-spacing: -2px;
 }
 
+/*Style for header dropdown menu*/
 .dropdown-menu li {
     position: relative;
 }
@@ -107,6 +102,7 @@ header li {
     display: none;
 }
 
+/*Style for slider*/
 .slider {
     width: 100%;
     height: 600px;
@@ -114,10 +110,9 @@ header li {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
 }
 
-.slider_wrapper {
+.slider-wrapper {
     display: flex;
     height: 30%;
     justify-content: space-around;
@@ -166,12 +161,15 @@ header li {
     text-decoration: none;
 }
 
+/*Style for main content*/
+
 main {
     width: 100%;
     height: 40%;
     background-color: #e5e5e5;
 }
 
+/*Style for services section*/
 .services {
     display: flex;
     width: 100%;
@@ -194,7 +192,7 @@ main {
 }
 
 .service h3 {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #4e4e4e;
     font-size: 18px;
     font-weight: 700;
@@ -204,13 +202,20 @@ main {
 
 .service p {
     display: block;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #616161;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
 }
 
+.line {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 2px;
+    margin: 3% 11% 3% 11%;
+}
+
+/*Style for works section*/
 .works {
     display: flex;
     width: 100%;
@@ -220,11 +225,11 @@ main {
 
 .works-title {
     display: flex;
-    width: 85%;
-    height: 40px;
-    font-family: Roboto;
+    width: 77%;
+    height: 50px;
+    font-family: RobotoCondensed, serif;
     color: #4e4e4e;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 35px;
 
@@ -232,61 +237,204 @@ main {
 
 .works-wrapper {
     display: flex;
-    width: 85%;
-}
-/*Извиняюсь за padding, почему-то никак не получилось сделать нормально через flex. Буду благодарен наводке.*/
-.work {
-    display: flex;
-    flex-direction: column;
-    padding-right: 2%;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
-.work h3 {
+/*Извиняюсь за padding, почему-то никак не получилось сделать нормально через flex. Буду благодарен наводке.*/
+.works-container {
+    display: flex;
+    flex-direction: column;
+    width: 381px;
+    height: 418px;
+}
+
+.works-container h3 {
     height: 30px;
-    font-family: RobotoSlab;
-    color:  #4e4e4e;
-    font-size: 18px;/
+    font-family: RobotoSlab, serif;
+    color: #4e4e4e;
+    font-size: 18px;
     font-weight: 700;
     line-height: 65px;
 }
 
-.work .description {
+.works-container .description {
     height: 60px;
-    font-family: RobotoSlab;
-    color:  #a8a8a8;
+    font-family: RobotoSlab, serif;
+    color: #a8a8a8;
     font-size: 13px;
     font-weight: 400;
     line-height: 65px;
 }
-.work .text{
-    font-family: Roboto;
-    color:  #5c5c5c;
+
+.works-container .text {
+    font-family: Roboto, serif;
+    color: #5c5c5c;
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
 }
+
+/*Style for slogan section*/
 .slogan {
-    background-color:  rgba(0, 0, 0, 0.03);
+    background-color: #d9d9db;
     width: 100%;
-    height: 120px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.slogan-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3%;
 }
+
 .slogan .quotes {
-    font-family: ArialRoundedMTBold;
-    color:  #dcdcdc;
-    font-size: 100px;/* Приближение из-за подстановки шрифтов */
+    font-family: ArialRoundedMTBold, serif;
+    color: #cecece;
+    font-size: 100px; /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 35px;
 }
 
 .slogan .text {
-    font-family: RobotoSlab;
-    color:  #a1a1a1;
+    width: 40%;
+    font-family: RobotoSlab, serif;
+    color: #a1a1a1;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
+
+}
+
+/*Style for footer*/
+footer {
+    width: 100%;
+    height: 459px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #cacaca;
+    background: url("images/footer_bg.jpg");
+}
+
+.footer-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 {
+    width: 18%;
+}
+
+.container-2 {
+    width: 16%;
+
+}
+
+.container-3 {
+    width: 16%;
+
+}
+
+.container-4 {
+    width: 17%;
+}
+
+.footer-container h3 {
+    height: 40px;
+    font-family: RobotoCondensed, serif;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-bottom: 1%;
+}
+
+.footer-container span {
+    font-family: Roboto, serif;
+    color: #cacaca;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer-contact {
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.footer-contact li {
+    padding-bottom: 2%;
+    padding-left: 4%;
+
+}
+
+.footer-contact li:nth-child(1) {
+    list-style-image: url("images/place.png");
+}
+
+.footer-contact li:nth-child(2) {
+    list-style-image: url("images/phone.png");
+}
+
+.footer-contact li:nth-child(3) {
+    list-style-image: url("images/mail.png");
+}
+
+.list-container {
+    height: 170px;
+    display: flex;
+    font-family: Roboto, serif;
+    color: #cacaca;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-image: url("images/twitter.png");
+}
+
+.list-container li {
+    padding-bottom: 10%;
+}
+
+.footer-text-date {
+    font-family: RobotoSlab, serif;
+    color: #cacaca;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 3%;
+}
+
+.footer-line {
+    width: 80%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.11);
+    margin: 3% 11% 3% 11%;
+}
+
+.copyright {
+    display: flex;
+    align-self: center;
+    width: 80%;
 }
